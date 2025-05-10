@@ -1,0 +1,200 @@
+#:import md_icons kivymd.icon_definitions.md_icons
+#:import FadeTransition kivy.uix.screenmanager.FadeTransition
+
+# =====================
+# REUSABLE COMPONENTS
+# =====================
+<CircularContainer@MDCard>:
+    size_hint: None, None
+    size: dp(200), dp(200)
+    radius: dp(100)
+    elevation: 4
+    pos_hint: {"center_x": .5, "center_y": .6}
+    md_bg_color: 1, 1, 1, 1
+    padding: dp(10)
+
+<GearButton@MDIconButton>:
+    icon: "cog"
+    theme_text_color: "Custom"
+    text_color: 1, 1, 1, 1
+    pos_hint: {"right": .95, "top": .95}
+    user_font_size: "30sp"
+    md_bg_color: 1, 1, 1, .2
+    size_hint: None, None
+    size: dp(50), dp(50)
+
+<StandardButton@MDFillRoundFlatButton>:
+    text: "Standard"
+    size_hint: None, None
+    size: dp(200), dp(48)
+    pos_hint: {"center_x": 0.5}
+    font_size: "16sp"
+    md_bg_color: 0.3, 0.6, 1, 1
+    text_color: 1, 1, 1, 1
+
+# =====================
+# MAIN SCREEN
+# =====================
+<MainScreen>:
+    glasses_icon: glasses_icon
+
+    MDFloatLayout:
+        canvas.before:
+            Color:
+                rgba: 0.2, 0, 0.4, 1  # Dark purple background
+            Rectangle:
+                pos: self.pos
+                size: self.size
+
+        # Top-right settings gear
+        GearButton:
+            on_release:
+                root.speak_feedback("Settings menu not yet implemented")
+
+        # Central icon container
+        CircularContainer:
+            id: icon_container
+            MDFloatLayout:
+                id: glasses_icon
+                size_hint: 1, 1
+                pos_hint: {"center_x": .5, "center_y": .5}
+                Image:
+                    id: main_icon
+                    source: "glasses_icon.png"
+                    pos_hint: {"center_x": .5, "center_y": .5}
+                    size_hint: 0.8, 0.8
+                    # KivyMD 1.2.0 still uses these properties
+                    allow_stretch: True
+                    keep_ratio: True
+
+        # Status text (centered below icon)
+        MDLabel:
+            text: root.status_text
+            halign: "center"
+            theme_text_color: "Custom"
+            text_color: 1, 1, 1, 1
+            font_style: "Subtitle1"
+            pos_hint: {"center_x": .5, "center_y": .3}
+            size_hint_y: None
+            height: self.texture_size[1]
+
+        # Action buttons (vertically stacked)
+        BoxLayout:
+            orientation: "vertical"
+            size_hint_y: None
+            height: dp(120)
+            pos_hint: {"center_x": .5, "y": .05}
+            spacing: dp(10)
+            padding: [0, 0, 0, dp(10)]
+
+            StandardButton:
+                text: "Take Picture"
+                md_bg_color: 0.3, 0.1, 0.5, 1
+                on_release: root.go_to_camera()
+
+            StandardButton:
+                text: "Select Image"
+                md_bg_color: 0.2, 0.2, 0.4, 1
+                on_release: root.choose_image()
+
+# =====================
+# CAMERA SCREEN
+# =====================
+<CameraScreen>:
+    camera: camera
+
+    MDFloatLayout:
+        canvas.before:
+            Color:
+                rgba: 0.2, 0, 0.4, 1
+            Rectangle:
+                pos: self.pos
+                size: self.size
+
+        # Back button
+        MDIconButton:
+            icon: "arrow-left"
+            pos_hint: {"x": .02, "top": .98}
+            user_font_size: "30sp"
+            theme_text_color: "Custom"
+            text_color: 1, 1, 1, 1
+            on_release:
+                root.stop_camera()
+                app.root.current = 'main'
+
+        # Camera preview
+        Camera:
+            id: camera
+            resolution: 640, 480
+            play: False
+            size_hint: 1, 0.7
+            pos_hint: {"center_x": .5, "top": .85}
+            allow_stretch: True
+            keep_ratio: True
+
+        # Status text
+        MDLabel:
+            text: root.status_text
+            halign: "center"
+            theme_text_color: "Custom"
+            text_color: 1, 1, 1, 1
+            font_style: "Subtitle1"
+            size_hint_y: None
+            height: self.texture_size[1]
+            pos_hint: {"center_x": .5, "top": .15}
+
+        # Capture button
+        StandardButton:
+            text: "Capture Now"
+            md_bg_color: 0.3, 0.1, 0.5, 1
+            pos_hint: {"center_x": .5, "y": .05}
+            on_release: root.capture_image()
+
+# =====================
+# LOADING SCREEN
+# =====================
+<LoadingScreen>:
+    MDFloatLayout:
+        canvas.before:
+            Color:
+                rgba: 0.2, 0, 0.4, 1
+            Rectangle:
+                pos: self.pos
+                size: self.size
+
+        # Top-right settings gear
+        GearButton:
+            on_release:
+                app.root.get_screen('main').speak_feedback("Settings menu not yet implemented")
+
+        # Central spinning wheel
+        CircularContainer:
+            id: loading_container
+            MDFloatLayout:
+                size_hint: 1, 1
+                pos_hint: {"center_x": .5, "center_y": .5}
+                Image:
+                    id: wheel_image
+                    source: "wheel_icon.png"
+                    pos_hint: {"center_x": .5, "center_y": .5}
+                    size_hint: 0.8, 0.8
+                    allow_stretch: True
+                    keep_ratio: True
+
+        # Status text (same position as main screen)
+        MDLabel:
+            text: root.status_text
+            halign: "center"
+            theme_text_color: "Custom"
+            text_color: 1, 1, 1, 1
+            font_style: "Subtitle1"
+            pos_hint: {"center_x": .5, "center_y": .3}
+            size_hint_y: None
+            height: self.texture_size[1]
+
+        # Cancel button (same position as main screen's primary button)
+        StandardButton:
+            text: "Cancel"
+            md_bg_color: 0.3, 0.1, 0.5, 1
+            pos_hint: {"center_x": .5, "y": .15}
+            on_release: app.root.current = 'main'
