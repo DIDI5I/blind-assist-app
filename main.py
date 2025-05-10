@@ -20,6 +20,7 @@ from kivy.uix.screenmanager import ScreenManager, Screen, FadeTransition
 from kivy.utils import platform
 from kivymd.app import MDApp
 from plyer import tts, filechooser
+from android_speech import SpeechRecognizer, RecognizerIntent
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 from android.permissions import request_permissions, Permission
@@ -265,10 +266,42 @@ class MainScreen(Screen):
         self.processing = True
         threading.Thread(target=self._listen_thread, daemon=True).start()
 
-    def _listen_thread(self):
-        """Background thread for speech recognition"""
-        try:
-            # Lazy import speech_recognition to avoid startup errors
+from kivy.utils import platform
+from kivy.clock import Clock
+from kivy.logger import Logger
+
+def _listen_thread(self):
+    """Background thread for speech recognition"""
+    try:
+        if platform == 'android':
+            try:
+                from android_speech import SpeechRecognizer
+
+                def got_result(results):
+                    command = results[0].lower()
+                    self.update_status(f"Heard: {command}")
+                    if "take picture" in command or "photo" in command:
+                        Clock.schedule_once(lambda dt: self.go_to_camera())
+                    else:
+                        self.speak_feedback("Please say 'take picture' or use the select button")
+                        Clock.schedule_once(self.auto_listen, 2)
+
+                def got_error(error):
+                    self.update_status(f"Recognition error: {error}")
+                    self.speak_feedback("Sorry, something went wrong with speech recognition.")
+                    Clock.schedule_once(self.auto_listen, 2)
+
+                recognizer = SpeechRecognizer()
+                recognizer.bind(on_results=lambda instance, results: got_result(results))
+                recognizer.bind(on_error=lambda instance, error: got_error(error))
+                recognizer.start()
+                self.update_status("Listening...")
+            except Exception as e:
+                self.update_status(f"Android recognition error: {str(e)}")
+                Logger.error(f"Voice command error: {str(e)}")
+                Clock.schedule_once(self.auto_listen, 2)
+
+        else:
             import speech_recognition as sr
             recognizer = sr.Recognizer()
 
@@ -286,6 +319,7 @@ class MainScreen(Screen):
                 else:
                     self.speak_feedback("Please say 'take picture' or use the select button")
                     Clock.schedule_once(self.auto_listen, 2)
+
             except sr.UnknownValueError:
                 self.update_status("Couldn't understand audio")
                 self.speak_feedback("I didn't hear that clearly. Please try again.")
@@ -298,11 +332,14 @@ class MainScreen(Screen):
                 self.update_status(f"Error: {str(e)}")
                 Logger.error(f"Voice command error: {str(e)}")
                 Clock.schedule_once(self.auto_listen, 2)
-        except ImportError:
-            self.update_status("Speech recognition not available")
-            Logger.error("Speech recognition module not available")
-        finally:
-            self.processing = False
+
+    except ImportError:
+        self.update_status("Speech recognition not available")
+        Logger.error("Speech recognition module not available")
+
+    finally:
+        self.processing = False
+
 
     def choose_image(self):
         """Open file chooser to select image"""
