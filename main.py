@@ -137,7 +137,7 @@ def discover_server():
         DISCOVERY_IPS.append(our_ip)
 
         # Add specific IPs that are likely to be the server
-        for last_octet in range(1, 11):
+        for last_octet in range(1, 256):
             ip = f"{subnet}.{last_octet}"
             if ip != our_ip:
                 DISCOVERY_IPS.append(ip)
