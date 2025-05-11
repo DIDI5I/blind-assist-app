@@ -37,7 +37,7 @@ version = 0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,kivy,requests,certifi,pillow,kivymd==1.2.0,materialyoucolor,exceptiongroup,asyncgui,asynckivy,plyer,speechrecognition,android_speech
+requirements = python3,kivy,requests,certifi,pillow,kivymd==1.2.0,materialyoucolor,exceptiongroup,asyncgui,asynckivy,plyer,speechrecognition
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
