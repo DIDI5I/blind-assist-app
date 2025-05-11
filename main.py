@@ -24,7 +24,6 @@ from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 from android.permissions import request_permissions, Permission
 request_permissions([Permission.CAMERA, Permission.RECORD_AUDIO, Permission.RECORD_AUDIO])
-
 # Configure logging
 logging.basicConfig(level=logging.INFO)
 for module in ['comtypes', 'urllib3', 'PIL']:
@@ -265,9 +264,7 @@ class MainScreen(Screen):
         self.processing = True
         threading.Thread(target=self._listen_thread, daemon=True).start()
 
-
-
-  def _listen_thread(self):
+    def _listen_thread(self):
         """Background thread for speech recognition"""
         try:
             # Lazy import speech_recognition to avoid startup errors
@@ -305,7 +302,6 @@ class MainScreen(Screen):
             Logger.error("Speech recognition module not available")
         finally:
             self.processing = False
-
 
     def choose_image(self):
         """Open file chooser to select image"""
