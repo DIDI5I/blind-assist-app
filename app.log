@@ -1,0 +1,334 @@
+2025-05-04 20:32:10,372 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.41.235:8000
+2025-05-04 20:32:10,373 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-04 20:33:17,118 [INFO] Received image (873.2 KB)
+2025-05-04 20:33:17,211 [INFO] Starting object detection...
+2025-05-04 20:33:17,212 [ERROR] Processing error: name 'DETECTION_CONFIDENCE' is not defined
+Traceback (most recent call last):
+  File "C:\Users\Pc\PycharmProjects\pythonProject2\apkfolder\assistive_server.py", line 120, in process_image
+    conf=DETECTION_CONFIDENCE,
+NameError: name 'DETECTION_CONFIDENCE' is not defined
+2025-05-04 20:33:17,219 [INFO] 127.0.0.1 - - [04/May/2025 20:33:17] "[35m[1mPOST /process-image HTTP/1.1[0m" 500 -
+2025-05-04 20:33:36,784 [INFO] Received image (873.2 KB)
+2025-05-04 20:33:36,842 [INFO] Starting object detection...
+2025-05-04 20:33:36,843 [ERROR] Processing error: name 'DETECTION_CONFIDENCE' is not defined
+Traceback (most recent call last):
+  File "C:\Users\Pc\PycharmProjects\pythonProject2\apkfolder\assistive_server.py", line 120, in process_image
+    conf=DETECTION_CONFIDENCE,
+NameError: name 'DETECTION_CONFIDENCE' is not defined
+2025-05-04 20:33:36,851 [INFO] 127.0.0.1 - - [04/May/2025 20:33:36] "[35m[1mPOST /process-image HTTP/1.1[0m" 500 -
+2025-05-04 20:38:10,778 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.41.235:8000
+2025-05-04 20:38:10,785 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-04 20:38:30,352 [INFO] Received image (873.2 KB)
+2025-05-04 20:38:31,217 [INFO] Starting object detection...
+2025-05-04 20:38:45,251 [INFO] Found 13 objects
+2025-05-04 20:38:55,354 [ERROR] LLM error: 
+2025-05-04 20:38:57,552 [INFO] 127.0.0.1 - - [04/May/2025 20:38:57] "POST /process-image HTTP/1.1" 200 -
+2025-05-04 20:39:20,276 [INFO] Received image (873.2 KB)
+2025-05-04 20:39:20,403 [INFO] Starting object detection...
+2025-05-04 20:39:35,448 [INFO] Found 13 objects
+2025-05-04 20:39:45,529 [ERROR] LLM error: 
+2025-05-04 20:39:47,288 [INFO] 127.0.0.1 - - [04/May/2025 20:39:47] "POST /process-image HTTP/1.1" 200 -
+2025-05-04 20:42:40,507 [INFO] Received image (361.5 KB)
+2025-05-04 20:42:40,611 [INFO] Starting object detection...
+2025-05-04 20:42:51,743 [INFO] Found 14 objects
+2025-05-04 20:43:01,757 [ERROR] LLM error: 
+2025-05-04 20:43:01,768 [INFO] 127.0.0.1 - - [04/May/2025 20:43:01] "POST /process-image HTTP/1.1" 200 -
+2025-05-04 20:43:39,815 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-05-04 20:43:52,535 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-05-04 20:44:05,097 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-05-04 21:49:36,262 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.41.235:8000
+2025-05-04 21:49:36,265 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-04 21:49:59,140 [INFO] Received image (361.5 KB)
+2025-05-04 21:49:59,386 [INFO] Starting object detection...
+2025-05-04 21:50:08,853 [INFO] Found 14 objects
+2025-05-04 21:50:19,477 [ERROR] LLM error: 
+2025-05-04 21:50:23,138 [INFO] 127.0.0.1 - - [04/May/2025 21:50:23] "POST /process-image HTTP/1.1" 200 -
+2025-05-04 21:57:33,711 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-05-04 22:00:39,539 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.41.235:8000
+2025-05-04 22:00:39,540 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-04 22:19:16,454 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.41.235:8000
+2025-05-04 22:19:16,454 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-04 22:26:42,432 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.41.235:8000
+2025-05-04 22:26:42,433 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-04 22:26:58,441 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 404 Not Found"
+2025-05-04 22:26:58,442 [ERROR] LLM error: model 'deepseek-llm:7b' not found (status code: 404)
+2025-05-04 22:26:58,445 [INFO] 127.0.0.1 - - [04/May/2025 22:26:58] "POST /process-image HTTP/1.1" 200 -
+2025-05-04 22:27:32,300 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 404 Not Found"
+2025-05-04 22:27:32,301 [ERROR] LLM error: model 'deepseek-llm:7b' not found (status code: 404)
+2025-05-04 22:27:32,303 [INFO] 127.0.0.1 - - [04/May/2025 22:27:32] "POST /process-image HTTP/1.1" 200 -
+2025-05-04 22:28:56,286 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.41.235:8000
+2025-05-04 22:28:56,286 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-04 22:42:41,099 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2025-05-04 22:42:41,100 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-05 09:51:04,928 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2025-05-05 09:51:04,929 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-05 09:52:35,934 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2025-05-05 09:52:35,935 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-05 09:58:34,974 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2025-05-05 09:58:34,974 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-05 10:00:22,847 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2025-05-05 10:00:22,847 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-05 10:01:57,809 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2025-05-05 10:01:57,810 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-05 10:04:16,594 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.101:8000
+2025-05-05 10:04:16,594 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-05 10:04:55,960 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2025-05-05 10:04:55,960 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-05 10:19:03,981 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2025-05-05 10:19:03,981 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-05 10:21:26,009 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2025-05-05 10:21:26,010 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-05 10:21:37,096 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 404 Not Found"
+2025-05-05 10:21:37,098 [ERROR] LLM error: model 'deepseek-llm:7b' not found (status code: 404)
+2025-05-05 10:21:37,099 [INFO] 127.0.0.1 - - [05/May/2025 10:21:37] "POST /process-image HTTP/1.1" 200 -
+2025-05-05 10:21:50,877 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 404 Not Found"
+2025-05-05 10:21:50,878 [ERROR] LLM error: model 'deepseek-llm:7b' not found (status code: 404)
+2025-05-05 10:21:50,879 [INFO] 127.0.0.1 - - [05/May/2025 10:21:50] "POST /process-image HTTP/1.1" 200 -
+2025-05-05 10:23:35,818 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2025-05-05 10:23:35,819 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-05 10:24:07,657 [WARNING] LLM timeout, returning basic description
+2025-05-05 10:24:07,659 [INFO] 127.0.0.1 - - [05/May/2025 10:24:07] "POST /process-image HTTP/1.1" 200 -
+2025-05-05 10:24:12,827 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-05-05 10:32:07,280 [WARNING] LLM timeout, returning basic description
+2025-05-05 10:32:07,281 [INFO] 127.0.0.1 - - [05/May/2025 10:32:07] "POST /process-image HTTP/1.1" 200 -
+2025-05-05 10:32:27,120 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-05-05 10:38:07,179 [WARNING] LLM timeout, returning basic description
+2025-05-05 10:38:07,196 [INFO] 127.0.0.1 - - [05/May/2025 10:38:07] "POST /process-image HTTP/1.1" 200 -
+2025-05-05 10:38:29,158 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-05-05 10:39:19,167 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-05-05 10:39:19,171 [INFO] 127.0.0.1 - - [05/May/2025 10:39:19] "POST /process-image HTTP/1.1" 200 -
+2025-05-05 10:40:50,738 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2025-05-05 10:40:50,739 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-05 10:41:26,052 [WARNING] LLM timeout, returning basic description
+2025-05-05 10:41:26,060 [INFO] 127.0.0.1 - - [05/May/2025 10:41:26] "POST /process-image HTTP/1.1" 200 -
+2025-05-05 10:42:17,982 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-05-05 10:43:08,626 [WARNING] LLM timeout, returning basic description
+2025-05-05 10:43:08,793 [INFO] 127.0.0.1 - - [05/May/2025 10:43:08] "POST /process-image HTTP/1.1" 200 -
+2025-05-05 10:44:49,685 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-05-05 10:45:18,918 [WARNING] LLM timeout, returning basic description
+2025-05-05 10:45:19,713 [INFO] 127.0.0.1 - - [05/May/2025 10:45:19] "POST /process-image HTTP/1.1" 200 -
+2025-05-05 10:47:13,404 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-05-05 10:47:39,406 [WARNING] LLM timeout, returning basic description
+2025-05-05 10:47:39,409 [INFO] 127.0.0.1 - - [05/May/2025 10:47:39] "POST /process-image HTTP/1.1" 200 -
+2025-05-05 10:47:45,076 [ERROR] LLM error: cannot schedule new futures after interpreter shutdown
+2025-05-05 10:47:45,077 [INFO] 127.0.0.1 - - [05/May/2025 10:47:45] "POST /process-image HTTP/1.1" 200 -
+2025-05-05 10:47:55,487 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-05-05 10:50:05,551 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2025-05-05 10:50:05,552 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-05 10:50:52,818 [WARNING] LLM timeout, returning basic description
+2025-05-05 10:50:52,849 [INFO] 127.0.0.1 - - [05/May/2025 10:50:52] "POST /process-image HTTP/1.1" 200 -
+2025-05-05 10:51:36,102 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-05-05 10:52:20,526 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2025-05-05 10:52:20,527 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-05 10:52:43,275 [WARNING] LLM timeout, returning basic description
+2025-05-05 10:52:43,288 [INFO] 127.0.0.1 - - [05/May/2025 10:52:43] "POST /process-image HTTP/1.1" 200 -
+2025-05-05 10:53:26,553 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-05-05 10:54:10,010 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2025-05-05 10:54:10,010 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-05 10:54:42,214 [WARNING] LLM timeout, returning basic description
+2025-05-05 10:54:44,046 [INFO] 127.0.0.1 - - [05/May/2025 10:54:44] "POST /process-image HTTP/1.1" 200 -
+2025-05-05 10:54:55,683 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-05-05 11:13:35,167 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2025-05-05 11:13:35,168 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-05 11:14:18,043 [WARNING] LLM timeout, returning basic description
+2025-05-05 11:14:18,045 [INFO] 127.0.0.1 - - [05/May/2025 11:14:18] "POST /process-image HTTP/1.1" 200 -
+2025-05-05 11:15:02,970 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-05-05 11:19:16,260 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2025-05-05 11:19:16,262 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-05 11:20:12,888 [WARNING] LLM timeout, returning basic description
+2025-05-05 11:20:12,900 [INFO] 127.0.0.1 - - [05/May/2025 11:20:12] "POST /process-image HTTP/1.1" 200 -
+2025-05-05 11:20:45,415 [WARNING] LLM timeout, returning basic description
+2025-05-05 11:20:45,426 [INFO] 127.0.0.1 - - [05/May/2025 11:20:45] "POST /process-image HTTP/1.1" 200 -
+2025-05-05 11:22:15,187 [WARNING] LLM timeout, returning basic description
+2025-05-05 11:22:15,189 [INFO] 127.0.0.1 - - [05/May/2025 11:22:15] "POST /process-image HTTP/1.1" 200 -
+2025-05-05 11:22:41,480 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2025-05-05 11:22:41,480 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-05 11:24:53,058 [WARNING] LLM timeout, returning basic description
+2025-05-05 11:24:53,064 [INFO] 127.0.0.1 - - [05/May/2025 11:24:53] "POST /process-image HTTP/1.1" 200 -
+2025-05-05 11:25:28,018 [WARNING] LLM timeout, returning basic description
+2025-05-05 11:25:28,020 [INFO] 127.0.0.1 - - [05/May/2025 11:25:28] "POST /process-image HTTP/1.1" 200 -
+2025-05-05 11:30:14,571 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2025-05-05 11:30:14,572 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-05 11:31:36,772 [WARNING] LLM timeout, returning basic description
+2025-05-05 11:31:37,115 [INFO] 127.0.0.1 - - [05/May/2025 11:31:37] "POST /process-image HTTP/1.1" 200 -
+2025-05-05 11:31:40,275 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-05-05 11:32:25,178 [WARNING] LLM timeout, returning basic description
+2025-05-05 11:32:25,188 [INFO] 127.0.0.1 - - [05/May/2025 11:32:25] "POST /process-image HTTP/1.1" 200 -
+2025-05-05 11:32:25,279 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-05-05 11:33:09,657 [WARNING] LLM timeout, returning basic description
+2025-05-05 11:33:09,826 [INFO] 127.0.0.1 - - [05/May/2025 11:33:09] "POST /process-image HTTP/1.1" 200 -
+2025-05-05 11:33:10,230 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-05-05 11:33:58,531 [WARNING] LLM timeout, returning basic description
+2025-05-05 11:33:58,534 [INFO] 127.0.0.1 - - [05/May/2025 11:33:58] "POST /process-image HTTP/1.1" 200 -
+2025-05-05 11:36:40,357 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2025-05-05 11:36:40,358 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-05 11:37:47,436 [WARNING] LLM timeout, returning basic description
+2025-05-05 11:37:47,600 [INFO] 127.0.0.1 - - [05/May/2025 11:37:47] "POST /process-image HTTP/1.1" 200 -
+2025-05-05 11:38:06,948 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-05-05 11:38:55,043 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-05-05 11:38:55,097 [INFO] 127.0.0.1 - - [05/May/2025 11:38:55] "POST /process-image HTTP/1.1" 200 -
+2025-05-05 11:39:38,806 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-05-05 11:39:38,943 [INFO] 127.0.0.1 - - [05/May/2025 11:39:38] "POST /process-image HTTP/1.1" 200 -
+2025-05-05 11:40:01,705 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-05-05 11:40:01,725 [INFO] 127.0.0.1 - - [05/May/2025 11:40:01] "POST /process-image HTTP/1.1" 200 -
+2025-05-05 11:46:29,197 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2025-05-05 11:46:29,197 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-05 11:47:20,727 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-05-05 11:47:20,733 [INFO] 127.0.0.1 - - [05/May/2025 11:47:20] "POST /process-image HTTP/1.1" 200 -
+2025-05-05 11:47:57,014 [WARNING] LLM timeout, returning basic description
+2025-05-05 11:47:57,014 [INFO] 127.0.0.1 - - [05/May/2025 11:47:57] "POST /process-image HTTP/1.1" 200 -
+2025-05-05 11:48:11,362 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-05-05 11:48:23,654 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-05-05 11:48:23,656 [INFO] 127.0.0.1 - - [05/May/2025 11:48:23] "POST /process-image HTTP/1.1" 200 -
+2025-05-05 11:48:59,992 [WARNING] LLM timeout, returning basic description
+2025-05-05 11:48:59,993 [INFO] 127.0.0.1 - - [05/May/2025 11:48:59] "POST /process-image HTTP/1.1" 200 -
+2025-05-05 11:49:03,853 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-05-05 11:56:06,415 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2025-05-05 11:56:06,416 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-05 11:57:31,639 [WARNING] LLM timeout, returning basic description
+2025-05-05 11:57:31,641 [INFO] 127.0.0.1 - - [05/May/2025 11:57:31] "POST /process-image HTTP/1.1" 200 -
+2025-05-05 11:58:11,639 [WARNING] LLM timeout, returning basic description
+2025-05-05 11:58:11,640 [INFO] 127.0.0.1 - - [05/May/2025 11:58:11] "POST /process-image HTTP/1.1" 200 -
+2025-05-05 11:58:52,071 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-05-05 11:58:52,586 [WARNING] LLM timeout, returning basic description
+2025-05-05 11:58:52,589 [INFO] 127.0.0.1 - - [05/May/2025 11:58:52] "POST /process-image HTTP/1.1" 200 -
+2025-05-05 11:58:57,796 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-05-05 11:59:44,304 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2025-05-05 11:59:44,305 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-05 12:00:33,901 [WARNING] LLM timeout, returning basic description
+2025-05-05 12:00:33,903 [INFO] 127.0.0.1 - - [05/May/2025 12:00:33] "POST /process-image HTTP/1.1" 200 -
+2025-05-05 12:00:36,232 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-05-05 12:58:57,970 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-05-05 12:58:58,154 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2025-05-05 12:58:58,154 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-05 12:59:47,521 [WARNING] LLM timeout, returning basic description
+2025-05-05 12:59:47,571 [INFO] 127.0.0.1 - - [05/May/2025 12:59:47] "POST /process-image HTTP/1.1" 200 -
+2025-05-05 13:00:09,025 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-05-05 13:00:44,708 [WARNING] LLM timeout, returning basic description
+2025-05-05 13:00:44,711 [INFO] 127.0.0.1 - - [05/May/2025 13:00:44] "POST /process-image HTTP/1.1" 200 -
+2025-05-05 13:01:11,416 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-05-05 13:04:06,713 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-05-05 13:04:07,068 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2025-05-05 13:04:07,068 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-05 13:05:22,067 [WARNING] LLM timeout, returning basic description
+2025-05-05 13:05:22,164 [INFO] 127.0.0.1 - - [05/May/2025 13:05:22] "POST /process-image HTTP/1.1" 200 -
+2025-05-05 13:05:29,909 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-05-05 13:06:23,769 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-05-05 13:06:23,772 [INFO] 127.0.0.1 - - [05/May/2025 13:06:23] "POST /process-image HTTP/1.1" 200 -
+2025-05-05 13:07:14,782 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-05-05 13:07:14,785 [INFO] 127.0.0.1 - - [05/May/2025 13:07:14] "POST /process-image HTTP/1.1" 200 -
+2025-05-05 13:08:41,965 [WARNING] LLM timeout, returning basic description
+2025-05-05 13:08:41,968 [INFO] 127.0.0.1 - - [05/May/2025 13:08:41] "POST /process-image HTTP/1.1" 200 -
+2025-05-05 13:09:35,332 [WARNING] LLM timeout, returning basic description
+2025-05-05 13:09:35,334 [INFO] 127.0.0.1 - - [05/May/2025 13:09:35] "POST /process-image HTTP/1.1" 200 -
+2025-05-05 13:09:36,708 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-05-05 13:10:25,283 [WARNING] LLM timeout, returning basic description
+2025-05-05 13:10:25,285 [INFO] 127.0.0.1 - - [05/May/2025 13:10:25] "POST /process-image HTTP/1.1" 200 -
+2025-05-05 13:10:45,187 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-05-05 13:11:08,142 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-05-05 13:11:53,924 [WARNING] LLM timeout, returning basic description
+2025-05-05 13:11:53,925 [INFO] 127.0.0.1 - - [05/May/2025 13:11:53] "POST /process-image HTTP/1.1" 200 -
+2025-05-05 13:11:55,948 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-05-05 13:13:21,360 [WARNING] LLM timeout, returning basic description
+2025-05-05 13:13:21,362 [INFO] 127.0.0.1 - - [05/May/2025 13:13:21] "POST /process-image HTTP/1.1" 200 -
+2025-05-05 13:20:23,011 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-05-05 13:20:23,052 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2025-05-05 13:20:23,053 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-05 13:21:10,096 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-05-05 13:21:10,117 [INFO] 127.0.0.1 - - [05/May/2025 13:21:10] "POST /process-image HTTP/1.1" 200 -
+2025-05-05 13:22:30,352 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-05-05 13:22:30,831 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2025-05-05 13:22:30,832 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-05 13:23:48,979 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-05-05 13:23:49,017 [INFO] 127.0.0.1 - - [05/May/2025 13:23:49] "POST /process-image HTTP/1.1" 200 -
+2025-05-05 13:25:05,394 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-05-05 13:25:05,396 [INFO] 127.0.0.1 - - [05/May/2025 13:25:05] "POST /process-image HTTP/1.1" 200 -
+2025-05-05 13:26:26,099 [WARNING] LLM timeout, returning basic description
+2025-05-05 13:26:26,148 [INFO] 127.0.0.1 - - [05/May/2025 13:26:26] "POST /process-image HTTP/1.1" 200 -
+2025-05-05 13:26:27,278 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-05-05 13:27:36,089 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-05-05 13:27:36,094 [INFO] 127.0.0.1 - - [05/May/2025 13:27:36] "POST /process-image HTTP/1.1" 200 -
+2025-05-05 13:29:06,375 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-05-05 13:29:07,664 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2025-05-05 13:29:07,664 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-05 13:30:29,771 [WARNING] LLM timeout, returning basic description
+2025-05-05 13:30:29,803 [INFO] 127.0.0.1 - - [05/May/2025 13:30:29] "POST /process-image HTTP/1.1" 200 -
+2025-05-05 13:31:44,880 [WARNING] LLM timeout, returning basic description
+2025-05-05 13:31:44,882 [INFO] 127.0.0.1 - - [05/May/2025 13:31:44] "POST /process-image HTTP/1.1" 200 -
+2025-05-05 13:37:05,389 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-05-05 13:37:30,010 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-05-05 14:25:38,077 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-05-05 14:25:38,185 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2025-05-05 14:25:38,185 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-05 14:28:48,060 [WARNING] LLM timeout, returning basic description
+2025-05-05 14:28:48,107 [INFO] 127.0.0.1 - - [05/May/2025 14:28:48] "POST /process-image HTTP/1.1" 200 -
+2025-05-05 14:28:48,561 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-05-05 14:30:36,597 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-05-05 14:30:36,608 [INFO] 127.0.0.1 - - [05/May/2025 14:30:36] "POST /process-image HTTP/1.1" 200 -
+2025-05-05 15:07:38,646 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-05-05 15:07:38,843 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2025-05-05 15:07:38,843 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-05 15:09:25,983 [WARNING] LLM timeout, returning basic description
+2025-05-05 15:09:26,022 [INFO] 127.0.0.1 - - [05/May/2025 15:09:26] "POST /process-image HTTP/1.1" 200 -
+2025-05-05 15:09:39,366 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-05-05 17:06:17,940 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-05-05 17:06:18,417 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2025-05-05 17:06:18,417 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-05 17:08:50,191 [WARNING] LLM timeout, returning basic description
+2025-05-05 17:08:50,993 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-05-05 17:08:51,303 [INFO] 127.0.0.1 - - [05/May/2025 17:08:51] "POST /process-image HTTP/1.1" 200 -
+2025-05-05 17:14:50,560 [WARNING] LLM timeout, returning basic description
+2025-05-05 17:14:50,561 [INFO] 127.0.0.1 - - [05/May/2025 17:14:50] "POST /process-image HTTP/1.1" 200 -
+2025-05-06 19:56:35,907 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 500 Internal Server Error"

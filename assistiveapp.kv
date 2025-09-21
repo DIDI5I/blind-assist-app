@@ -1,0 +1,160 @@
+#:import dp kivy.metrics.dp
+#:import MDSpinner kivymd.uix.spinner.MDSpinner
+#:import FadeTransition kivy.uix.screenmanager.FadeTransition
+
+<GradientBackground@Widget>:
+    canvas.before:
+        Color:
+            rgba: 0.18, 0.10, 0.42, 1
+        Rectangle:
+            pos: self.pos
+            size: self.width, self.height * 0.5
+
+        Color:
+            rgba: 0.29, 0.58, 0.81, 1
+        Rectangle:
+            pos: self.x, self.y + self.height * 0.5
+            size: self.width, self.height * 0.5
+
+        Color:
+            rgba: 0.23, 0.14, 0.51, 1
+        Rectangle:
+            pos: self.x, self.y + self.height * 0.33
+            size: self.width, self.height * 0.34
+
+<WhiteCircle@Widget>:
+    canvas:
+        Color:
+            rgba: 1, 1, 1, 1
+        Ellipse:
+            pos: self.center_x - min(self.width, self.height) * 0.35, self.center_y - min(self.width, self.height) * 0.35
+            size: min(self.width, self.height) * 0.7, min(self.width, self.height) * 0.7
+
+ScreenManager:
+    id: screen_manager
+    transition: FadeTransition()
+
+    MainScreen:
+        id: main_screen
+        name: 'main'
+
+    CameraScreen:
+        id: camera_screen
+        name: 'camera'
+
+    LoadingScreen:
+        id: loading_screen
+        name: 'loading'
+
+<MainScreen>:
+    glasses_icon: glasses_icon
+
+    FloatLayout:
+        GradientBackground:
+            size_hint: 1, 1
+            pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+
+        WhiteCircle:
+            size_hint: 1, 1
+            pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+
+        Image:
+            id: glasses_icon
+            source: 'assets/glasses_icon.png'
+            size_hint: None, None
+            size: min(root.width, root.height) * 0.5, min(root.width, root.height) * 0.5
+            pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+
+        MDFloatingActionButton:
+            icon: "image"
+            pos_hint: {'right': 0.95, 'top': 0.95}
+            on_release: root.choose_image()
+            md_bg_color: app.theme_cls.primary_color
+            elevation_normal: 8
+
+        MDLabel:
+            id: status_label
+            text: root.status_text
+            halign: "center"
+            font_style: "H6"
+            theme_text_color: "Primary"
+            size_hint: 0.9, None
+            height: dp(50)
+            pos_hint: {'center_x': 0.5, 'top': 0.9}
+            text_size: self.width, None
+
+        MDSpinner:
+            id: spinner
+            size_hint: None, None
+            size: dp(46), dp(46)
+            pos_hint: {'center_x': 0.5, 'top': 0.8}
+            active: root.processing
+
+<CameraScreen>:
+    camera: camera_widget
+
+    FloatLayout:
+        GradientBackground:
+            size_hint: 1, 1
+            pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+
+        Camera:
+            id: camera_widget
+            resolution: (640, 480)
+            play: False
+            size_hint: 0.8, 0.6
+            pos_hint: {'center_x': 0.5, 'center_y': 0.55}
+
+        MDFloatingActionButton:
+            icon: "arrow-left"
+            pos_hint: {'x': 0.05, 'top': 0.95}
+            on_release: root.manager.current = 'main'
+            md_bg_color: app.theme_cls.primary_color
+            elevation_normal: 8
+
+        MDLabel:
+            id: status_label
+            text: root.status_text
+            halign: "center"
+            font_style: "H6"
+            theme_text_color: "Primary"
+            size_hint: 0.9, None
+            height: dp(50)
+            pos_hint: {'center_x': 0.5, 'top': 0.9}
+            text_size: self.width, None
+
+<LoadingScreen>:
+    wheel_icon: wheel_icon
+
+    FloatLayout:
+        GradientBackground:
+            size_hint: 1, 1
+            pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+
+        WhiteCircle:
+            size_hint: 1, 1
+            pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+
+        Image:
+            id: wheel_icon
+            source: 'assets/wheel_icon.png'
+            size_hint: None, None
+            size: min(root.width, root.height) * 0.5, min(root.width, root.height) * 0.5
+            pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+
+        MDLabel:
+            text: root.status_text
+            halign: "center"
+            font_style: "H6"
+            theme_text_color: "Primary"
+            size_hint: 0.9, None
+            height: dp(50)
+            pos_hint: {'center_x': 0.5, 'y': 0.22}
+            text_size: self.width, None
+
+        MDSpinner:
+            id: spinner
+            size_hint: None, None
+            size: dp(46), dp(46)
+            pos_hint: {'center_x': 0.5, 'top': 0.8}
+            active: True
